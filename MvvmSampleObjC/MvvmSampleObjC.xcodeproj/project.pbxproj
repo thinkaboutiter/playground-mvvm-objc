@@ -12,6 +12,8 @@
 		4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */; };
 		4FECDA6722DE64F600F45EFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA6622DE64F600F45EFD /* main.m */; };
 		4FECDA8122DE675100F45EFD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA8022DE675100F45EFD /* BaseViewController.m */; };
+		4FECDA8422DE67BD00F45EFD /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA8322DE67BD00F45EFD /* InitialViewController.m */; };
+		4FECDA8722DE67EF00F45EFD /* InitialViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA8622DE67EF00F45EFD /* InitialViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,12 @@
 		4FECDA6622DE64F600F45EFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4FECDA7F22DE675100F45EFD /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		4FECDA8022DE675100F45EFD /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4FECDA8222DE67BD00F45EFD /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		4FECDA8322DE67BD00F45EFD /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		4FECDA8522DE67EF00F45EFD /* InitialViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewModel.h; sourceTree = "<group>"; };
+		4FECDA8622DE67EF00F45EFD /* InitialViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewModel.m; sourceTree = "<group>"; };
+		4FECDA8822DE6DEC00F45EFD /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		4FECDA8B22DE738F00F45EFD /* MvvmSampleObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MvvmSampleObjC-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,8 @@
 		4FECDA7322DE672000F45EFD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4FECDA8B22DE738F00F45EFD /* MvvmSampleObjC-Prefix.pch */,
+				4FECDA8822DE6DEC00F45EFD /* Common.h */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -176,6 +186,8 @@
 		4FECDA7C22DE672000F45EFD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4FECDA8522DE67EF00F45EFD /* InitialViewModel.h */,
+				4FECDA8622DE67EF00F45EFD /* InitialViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,6 +195,8 @@
 		4FECDA7D22DE672000F45EFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4FECDA8222DE67BD00F45EFD /* InitialViewController.h */,
+				4FECDA8322DE67BD00F45EFD /* InitialViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +282,8 @@
 				4FECDA6722DE64F600F45EFD /* main.m in Sources */,
 				4FECDA8122DE675100F45EFD /* BaseViewController.m in Sources */,
 				4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */,
+				4FECDA8422DE67BD00F45EFD /* InitialViewController.m in Sources */,
+				4FECDA8722DE67EF00F45EFD /* InitialViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +419,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J48Y9TAH25;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MvvmSampleObjC/Sources/Utilities/MvvmSampleObjC-Prefix.pch";
 				INFOPLIST_FILE = MvvmSampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,6 +438,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J48Y9TAH25;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MvvmSampleObjC/Sources/Utilities/MvvmSampleObjC-Prefix.pch";
 				INFOPLIST_FILE = MvvmSampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
