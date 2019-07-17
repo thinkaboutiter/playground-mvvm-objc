@@ -11,6 +11,7 @@
 		4F0D17CB22DF5E850004EC39 /* Dummy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D17CA22DF5E850004EC39 /* Dummy.storyboard */; };
 		4F0D17CE22DF5EB50004EC39 /* DummyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17CD22DF5EB50004EC39 /* DummyViewModel.m */; };
 		4F0D17D122DF5F4A0004EC39 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D022DF5F4A0004EC39 /* DummyViewController.m */; };
+		4F0D17D622DF63460004EC39 /* UIViewController+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */; };
 		4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA5822DE64F400F45EFD /* AppDelegate.m */; };
 		4FECDA6122DE64F600F45EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6022DE64F600F45EFD /* Assets.xcassets */; };
 		4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */; };
@@ -28,6 +29,8 @@
 		4F0D17CD22DF5EB50004EC39 /* DummyViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyViewModel.m; sourceTree = "<group>"; };
 		4F0D17CF22DF5F4A0004EC39 /* DummyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
 		4F0D17D022DF5F4A0004EC39 /* DummyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
+		4F0D17D422DF63460004EC39 /* UIViewController+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Categories.h"; sourceTree = "<group>"; };
+		4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Categories.m"; sourceTree = "<group>"; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +86,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4F0D17D322DF62610004EC39 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D17D422DF63460004EC39 /* UIViewController+Categories.h */,
+				4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		4FECDA4B22DE64F400F45EFD = {
 			isa = PBXGroup;
 			children = (
@@ -124,20 +136,12 @@
 		4FECDA7022DE672000F45EFD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4FECDA7422DE672000F45EFD /* DataLayer */,
+				4F0D17D322DF62610004EC39 /* Categories */,
 				4FECDA7222DE672000F45EFD /* Extensions */,
-				4FECDA7122DE672000F45EFD /* Managers */,
 				4FECDA7922DE672000F45EFD /* UILayer */,
 				4FECDA7322DE672000F45EFD /* Utilities */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		4FECDA7122DE672000F45EFD /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		4FECDA7222DE672000F45EFD /* Extensions */ = {
@@ -154,45 +158,6 @@
 				4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		4FECDA7422DE672000F45EFD /* DataLayer */ = {
-			isa = PBXGroup;
-			children = (
-				4FECDA7522DE672000F45EFD /* Repositories */,
-				4FECDA7822DE672000F45EFD /* Model */,
-			);
-			path = DataLayer;
-			sourceTree = "<group>";
-		};
-		4FECDA7522DE672000F45EFD /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				4FECDA7622DE672000F45EFD /* Network */,
-				4FECDA7722DE672000F45EFD /* Persistence */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		4FECDA7622DE672000F45EFD /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		4FECDA7722DE672000F45EFD /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Persistence;
-			sourceTree = "<group>";
-		};
-		4FECDA7822DE672000F45EFD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		4FECDA7922DE672000F45EFD /* UILayer */ = {
@@ -348,6 +313,7 @@
 				4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */,
 				4FECDA8422DE67BD00F45EFD /* InitialViewController.m in Sources */,
 				4FECDA8722DE67EF00F45EFD /* InitialViewModel.m in Sources */,
+				4F0D17D622DF63460004EC39 /* UIViewController+Categories.m in Sources */,
 				4F0D17D122DF5F4A0004EC39 /* DummyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
