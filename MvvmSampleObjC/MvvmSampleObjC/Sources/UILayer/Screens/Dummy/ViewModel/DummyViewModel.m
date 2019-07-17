@@ -9,14 +9,14 @@
 #import "DummyViewModel.h"
 
 @interface DummyViewModelImpl()
-/* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
+/* Uncomment if two way references between `View` and `ViewModel` objects are needed. Be careful for retain cycles! */
 @property (nonatomic, weak, nullable) id<DummyViewModelConsumer> view;
 @end
 
 @implementation DummyViewModelImpl
 
 #pragma mark - Accessors
-/* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
+/* Uncomment if two way references between `View` and `ViewModel` objects are needed. Be careful for retain cycles! */
 - (void)setView:(id<DummyViewModelConsumer>)newValue {
     _view = newValue;
 }
