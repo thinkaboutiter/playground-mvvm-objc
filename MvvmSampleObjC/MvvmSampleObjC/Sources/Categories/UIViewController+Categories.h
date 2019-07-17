@@ -25,7 +25,7 @@
  @param identifier Identifier for the `UIViewController` we are instantiating.
  @return Optional `UIViewController`.
  */
-+ (__kindof UIViewController * _Nullable)fromStoryboardWithName:(nonnull NSString *)storyboardName
-                                                         bundle:(nullable NSBundle *)bundle
-                                                     identifier:(nonnull NSString *)identifier;
++ (__kindof UIViewController * _Nullable)fromStoryboardWithName:(NSString * _Nonnull)storyboardName
+                                                         bundle:(NSBundle * _Nullable)bundle
+                                                     identifier:(NSString * _Nonnull)identifier;
 @end
