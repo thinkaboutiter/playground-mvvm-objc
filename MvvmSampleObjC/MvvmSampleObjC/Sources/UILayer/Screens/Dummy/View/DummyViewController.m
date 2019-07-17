@@ -8,7 +8,7 @@
 
 #import "DummyViewController.h"
 
-@interface DummyViewController () <DummyViewModelConsumer>
+@interface DummyViewController ()
 @property (nonatomic, strong, nonnull) id<DummyViewModel> viewModel;
 @end
 
@@ -46,7 +46,7 @@
 
 - (IBAction)dismissButton_touchUpInside:(UIButton *)sender {
     debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, @"");
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -10,6 +10,6 @@
 #import "BaseViewController.h"
 #import "DummyViewModel.h"
 
-@interface DummyViewController : BaseViewController
+@interface DummyViewController : BaseViewController <DummyViewModelConsumer>
 
 @end
