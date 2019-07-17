@@ -172,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				4FECDA7B22DE672000F45EFD /* Initial */,
-				4F0D17C522DF59960004EC39 /* Initial.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -180,6 +179,7 @@
 		4FECDA7B22DE672000F45EFD /* Initial */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D17C522DF59960004EC39 /* Initial.storyboard */,
 				4FECDA7D22DE672000F45EFD /* View */,
 				4FECDA7C22DE672000F45EFD /* ViewModel */,
 			);
