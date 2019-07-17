@@ -42,4 +42,9 @@
     [super viewDidLoad];
 }
 
+#pragma mark - Actions
+- (IBAction)showDummyScreenButton_touchUpInside:(UIButton *)sender {
+    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, @"Implement me!");
+}
+
 @end

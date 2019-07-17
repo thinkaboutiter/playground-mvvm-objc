@@ -180,8 +180,8 @@
 		4FECDA7B22DE672000F45EFD /* Initial */ = {
 			isa = PBXGroup;
 			children = (
-				4FECDA7C22DE672000F45EFD /* ViewModel */,
 				4FECDA7D22DE672000F45EFD /* View */,
+				4FECDA7C22DE672000F45EFD /* ViewModel */,
 			);
 			path = Initial;
 			sourceTree = "<group>";
