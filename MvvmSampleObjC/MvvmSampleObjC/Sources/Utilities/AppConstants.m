@@ -13,7 +13,7 @@ static NSString * const storyboardName_dummy = @"Dummy";
 
 @implementation AppConstants
 
-+ (nullable NSString *)storyboardNameForStoryboardId:(StoryboardId)storyboardId
++ (NSString * _Nullable)storyboardNameForStoryboardId:(StoryboardId)storyboardId
 {
     NSString* _Nullable result;
     switch (storyboardId) {
