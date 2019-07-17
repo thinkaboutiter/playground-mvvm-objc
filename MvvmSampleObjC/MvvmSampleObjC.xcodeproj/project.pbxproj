@@ -12,6 +12,7 @@
 		4F0D17CE22DF5EB50004EC39 /* DummyViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17CD22DF5EB50004EC39 /* DummyViewModel.m */; };
 		4F0D17D122DF5F4A0004EC39 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D022DF5F4A0004EC39 /* DummyViewController.m */; };
 		4F0D17D622DF63460004EC39 /* UIViewController+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */; };
+		4F0D17D922DF71280004EC39 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D822DF71280004EC39 /* AppConstants.m */; };
 		4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA5822DE64F400F45EFD /* AppDelegate.m */; };
 		4FECDA6122DE64F600F45EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6022DE64F600F45EFD /* Assets.xcassets */; };
 		4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */; };
@@ -31,6 +32,8 @@
 		4F0D17D022DF5F4A0004EC39 /* DummyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
 		4F0D17D422DF63460004EC39 /* UIViewController+Categories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Categories.h"; sourceTree = "<group>"; };
 		4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Categories.m"; sourceTree = "<group>"; };
+		4F0D17D722DF71280004EC39 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		4F0D17D822DF71280004EC39 /* AppConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 		4FECDA7322DE672000F45EFD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D17D722DF71280004EC39 /* AppConstants.h */,
+				4F0D17D822DF71280004EC39 /* AppConstants.m */,
 				4FECDA8822DE6DEC00F45EFD /* Common.h */,
 				4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */,
 			);
@@ -313,6 +318,7 @@
 				4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */,
 				4FECDA8422DE67BD00F45EFD /* InitialViewController.m in Sources */,
 				4FECDA8722DE67EF00F45EFD /* InitialViewModel.m in Sources */,
+				4F0D17D922DF71280004EC39 /* AppConstants.m in Sources */,
 				4F0D17D622DF63460004EC39 /* UIViewController+Categories.m in Sources */,
 				4F0D17D122DF5F4A0004EC39 /* DummyViewController.m in Sources */,
 			);
