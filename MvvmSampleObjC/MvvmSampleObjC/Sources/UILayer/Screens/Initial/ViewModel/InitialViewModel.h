@@ -28,5 +28,3 @@
 
 @interface InitialViewModelImpl: NSObject <InitialViewModel>
 @end
-
-
