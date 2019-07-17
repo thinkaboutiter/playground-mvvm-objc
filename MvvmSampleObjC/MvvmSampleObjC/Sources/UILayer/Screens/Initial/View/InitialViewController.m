@@ -7,6 +7,9 @@
 //
 
 #import "InitialViewController.h"
+#import "UIViewController+Categories.h"
+#import "DummyViewController.h"
+#import "DummyViewModel.h"
 
 @interface InitialViewController () <InitialViewModelConsumer>
 @property (nonatomic, strong, nonnull) id<InitialViewModel> viewModel;
@@ -44,7 +47,18 @@
 
 #pragma mark - Actions
 - (IBAction)showDummyScreenButton_touchUpInside:(UIButton *)sender {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, @"Implement me!");
+    DummyViewController* vc = (DummyViewController *)[UIViewController fromStoryboardWithName:[AppConstants storyboardNameForStoryboardId:kStoryboardId_dummy]
+                                                                                       bundle:nil
+                                                                                   identifier:NSStringFromClass([DummyViewController class])];
+    if (vc == nil) {
+        debugLog(@"❌ %s » \nError:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unable to instantiate %@", NSStringFromClass([DummyViewController class])]);
+        return;
+    }
+    id<DummyViewModel> vm = [[DummyViewModelImpl alloc] init];
+    [vc setViewModel:vm];
+    [self presentViewController:vc
+                       animated:YES
+                     completion:nil];
 }
 
 @end
