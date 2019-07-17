@@ -18,6 +18,8 @@
 #pragma mark - DummyViewModelConsumer protocol
 - (void)setViewModel:(id<DummyViewModel>)newValue {
     _viewModel = newValue;
+    /* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
+    [_viewModel setView:self];
 }
 
 - (id<DummyViewModel>)viewModel {

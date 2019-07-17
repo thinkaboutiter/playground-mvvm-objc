@@ -23,7 +23,7 @@
  */
 @protocol DummyViewModel <NSObject>
 /* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
-//- (void)setView:(nonnull id<DummyViewModelConsumer>)newValue;
+- (void)setView:(nonnull id<DummyViewModelConsumer>)newValue;
 @end
 
 @interface DummyViewModelImpl: NSObject <DummyViewModel>
