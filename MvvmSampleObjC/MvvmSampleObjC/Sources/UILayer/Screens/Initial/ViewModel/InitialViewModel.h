@@ -22,11 +22,11 @@
  Functionality for the `ViewModel` object to implement.
  */
 @protocol InitialViewModel <NSObject>
+/* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
+//- (void)setView:(nonnull id<InitialViewModelConsumer>)newValue;
 @end
 
 @interface InitialViewModelImpl: NSObject <InitialViewModel>
-@property (nonatomic, weak, readonly, nullable) id<InitialViewModelConsumer> view;
-- (void)setView:(nonnull id<InitialViewModelConsumer>)newValue;
 @end
 
 
