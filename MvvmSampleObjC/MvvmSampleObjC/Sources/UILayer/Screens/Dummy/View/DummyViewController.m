@@ -9,7 +9,7 @@
 #import "DummyViewController.h"
 
 @interface DummyViewController ()
-@property (nonatomic, strong, nonnull) id<DummyViewModel> viewModel;
+@property (nonatomic, strong) id<DummyViewModel> _Nonnull viewModel;
 @end
 
 @implementation DummyViewController
@@ -36,7 +36,7 @@
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"deinitialized %@", NSStringFromClass([DummyViewController class])]);
+    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Deinitialized %@", NSStringFromClass([DummyViewController class])]);
 }
 
 #pragma mark - Life cycle

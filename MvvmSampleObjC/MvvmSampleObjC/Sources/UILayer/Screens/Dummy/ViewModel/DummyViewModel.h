@@ -14,8 +14,8 @@
  Functionality for the `View` object to implement.
  */
 @protocol DummyViewModelConsumer <NSObject>
-- (nonnull id<DummyViewModel>)viewModel;
-- (void)setViewModel:(nonnull id<DummyViewModel>)newValue;
+- (id<DummyViewModel> _Nonnull)viewModel;
+- (void)setViewModel:(id<DummyViewModel> _Nonnull)newValue;
 @end
 
 /**
@@ -23,7 +23,7 @@
  */
 @protocol DummyViewModel <NSObject>
 /* Uncomment if two way references between `View` and `ViewModel` objects are needed. Be careful for retain cycles! */
-- (void)setView:(nonnull id<DummyViewModelConsumer>)newValue;
+- (void)setView:(id<DummyViewModelConsumer> _Nullable)newValue;
 @end
 
 @interface DummyViewModelImpl: NSObject <DummyViewModel>

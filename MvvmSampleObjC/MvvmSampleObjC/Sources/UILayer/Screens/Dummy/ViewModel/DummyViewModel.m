@@ -10,12 +10,12 @@
 
 @interface DummyViewModelImpl()
 /* Uncomment if two way references between `View` and `ViewModel` objects are needed. Be careful for retain cycles! */
-@property (nonatomic, weak, nullable) id<DummyViewModelConsumer> view;
+@property (nonatomic, weak) id<DummyViewModelConsumer> _Nullable view;
 @end
 
 @implementation DummyViewModelImpl
 
-#pragma mark - Accessors
+#pragma mark - DummyViewModel protocol
 /* Uncomment if two way references between `View` and `ViewModel` objects are needed. Be careful for retain cycles! */
 - (void)setView:(id<DummyViewModelConsumer>)newValue {
     _view = newValue;
@@ -31,7 +31,7 @@
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"deinitialized %@", NSStringFromClass([DummyViewModelImpl class])]);
+    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Deinitialized %@", NSStringFromClass([DummyViewModelImpl class])]);
 }
 
 @end
