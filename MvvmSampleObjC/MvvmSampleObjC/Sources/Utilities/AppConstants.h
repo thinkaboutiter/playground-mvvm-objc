@@ -15,6 +15,6 @@ typedef NS_ENUM(NSUInteger, StoryboardId) {
 
 @interface AppConstants : NSObject
 
-+ (nullable NSString *)storyboardNameForStoryboardId:(StoryboardId)storyboardId;
++ (NSString * _Nullable)storyboardNameForStoryboardId:(StoryboardId)storyboardId;
 
 @end
