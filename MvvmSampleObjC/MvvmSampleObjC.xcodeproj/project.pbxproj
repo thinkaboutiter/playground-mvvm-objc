@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MvvmSampleObjC-Prefix.pch"; sourceTree = "<group>"; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		4FECDA8522DE67EF00F45EFD /* InitialViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewModel.h; sourceTree = "<group>"; };
 		4FECDA8622DE67EF00F45EFD /* InitialViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewModel.m; sourceTree = "<group>"; };
 		4FECDA8822DE6DEC00F45EFD /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		4FECDA8B22DE738F00F45EFD /* MvvmSampleObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MvvmSampleObjC-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 		4FECDA7322DE672000F45EFD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4FECDA8B22DE738F00F45EFD /* MvvmSampleObjC-Prefix.pch */,
 				4FECDA8822DE6DEC00F45EFD /* Common.h */,
+				4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

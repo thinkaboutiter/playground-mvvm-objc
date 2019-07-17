@@ -32,8 +32,7 @@
 }
 
 - (void)dealloc {
-    NSLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"deinitialized %@", NSStringFromClass([InitialViewModelImpl class])]);
+    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"deinitialized %@", NSStringFromClass([InitialViewModelImpl class])]);
 }
 
 @end
-
