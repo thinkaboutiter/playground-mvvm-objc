@@ -10,22 +10,22 @@
 
 @interface UIViewController (StoryboardCreation)
 /**
-Instantiate initial `UIViewController` object from given `UIStoryboard` name.
-@param storyboardName Name of the storyboard.
-@param bundle Bundle for the storyboard.
-@return Optional `UIViewController`.
+ Instantiate initial `UIViewController` object from given `UIStoryboard` name.
+ @param storyboardName Name of the storyboard.
+ @param bundle Bundle for the storyboard.
+ @return Optional `UIViewController`.
  */
-+ (nullable __kindof UIViewController *)initialFromStoryboardWithName:(nonnull NSString *)storyboardName
-                                                               bundle:(nullable NSBundle *)bundle;
++ (__kindof UIViewController * _Nullable)initialFromStoryboardWithName:(nonnull NSString *)storyboardName
+                                                                bundle:(nullable NSBundle *)bundle;
 
 /**
-Instantiate `UIViewController` object from given `UIStoryboard` name.
-@param storyboardName Name of the storyboard.
-@param bundle Bundle for the storyboard.
-@param identifier Identifier for the `UIViewController` we are instantiating.
-@return Optional `UIViewController`.
+ Instantiate `UIViewController` object from given `UIStoryboard` name.
+ @param storyboardName Name of the storyboard.
+ @param bundle Bundle for the storyboard.
+ @param identifier Identifier for the `UIViewController` we are instantiating.
+ @return Optional `UIViewController`.
  */
-+ (nullable __kindof UIViewController *)fromStoryboardWithName:(nonnull NSString *)storyboardName
-                                                        bundle:(nullable NSBundle *)bundle
-                                                    identifier:(nonnull NSString *)identifier;
++ (__kindof UIViewController * _Nullable)fromStoryboardWithName:(nonnull NSString *)storyboardName
+                                                         bundle:(nullable NSBundle *)bundle
+                                                     identifier:(nonnull NSString *)identifier;
 @end
