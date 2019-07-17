@@ -15,8 +15,8 @@
  @param bundle Bundle for the storyboard.
  @return Optional `UIViewController`.
  */
-+ (__kindof UIViewController * _Nullable)initialFromStoryboardWithName:(nonnull NSString *)storyboardName
-                                                                bundle:(nullable NSBundle *)bundle;
++ (__kindof UIViewController * _Nullable)initialFromStoryboardWithName:(NSString * _Nonnull)storyboardName
+                                                                bundle:(NSBundle * _Nullable)bundle;
 
 /**
  Instantiate `UIViewController` object from given `UIStoryboard` name.
