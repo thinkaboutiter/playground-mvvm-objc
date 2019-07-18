@@ -37,7 +37,7 @@
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Deinitialized %@", NSStringFromClass([InitialViewController class])]);
+    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, @"");
 }
 
 #pragma mark - Life cycle
@@ -51,7 +51,7 @@
                                                                                        bundle:nil
                                                                                    identifier:NSStringFromClass([DummyViewController class])];
     if (vc == nil) {
-        debugLog(@"❌ %s » \nError:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unable to instantiate %@", NSStringFromClass([DummyViewController class])]);
+        debugLog(@"❌ %s » %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unable to instantiate %@", NSStringFromClass([DummyViewController class])]);
         return;
     }
     id<DummyViewModel> vm = [[DummyViewModelImpl alloc] init];

@@ -15,7 +15,7 @@
 {
     UIViewController* result = [[UIStoryboard storyboardWithName:storyboardName bundle:bundle] instantiateInitialViewController];
     if (result == nil) {
-        debugLog(@"❌ %s » \nError:\n%@\n", __PRETTY_FUNCTION__, @"Unable to instantiate initial view controller!");
+        debugLog(@"❌ %s » %@", __PRETTY_FUNCTION__, @"Unable to instantiate initial view controller!");
         return nil;
     }
     return result;
@@ -27,7 +27,7 @@
 {
     UIViewController* result = [[UIStoryboard storyboardWithName:storyboardName bundle:bundle] instantiateViewControllerWithIdentifier:identifier];
     if (result == nil) {
-        debugLog(@"❌ %s » \nError:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unanble to instantiate view controller with identifier=%@", identifier]);
+        debugLog(@"❌ %s » %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unanble to instantiate view controller with identifier=%@", identifier]);
         return nil;
     }
     return result;

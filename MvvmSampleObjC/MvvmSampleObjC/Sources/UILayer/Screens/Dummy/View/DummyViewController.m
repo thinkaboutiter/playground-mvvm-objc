@@ -36,7 +36,7 @@
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Deinitialized %@", NSStringFromClass([DummyViewController class])]);
+    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, @"");
 }
 
 #pragma mark - Life cycle
@@ -47,7 +47,7 @@
 #pragma mark - Actions
 
 - (IBAction)dismissButton_touchUpInside:(UIButton *)sender {
-    debugLog(@"🛠 %s » \nDebug:\n%@\n", __PRETTY_FUNCTION__, @"");
+    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, @"");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
