@@ -9,6 +9,7 @@
 #import "UIViewController+Categories.h"
 
 @implementation UIViewController (StoryboardCreation)
+
 + (UIViewController *)initialFromStoryboardWithName:(NSString *)storyboardName
                                              bundle:(NSBundle *)bundle
 {
