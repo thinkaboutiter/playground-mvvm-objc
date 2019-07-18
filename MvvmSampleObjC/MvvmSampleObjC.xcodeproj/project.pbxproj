@@ -23,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MvvmSampleObjC-Prefix.pch"; sourceTree = "<group>"; };
 		4F0D17C422DF59960004EC39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 		4F0D17CA22DF5E850004EC39 /* Dummy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dummy.storyboard; sourceTree = "<group>"; };
 		4F0D17CC22DF5EB50004EC39 /* DummyViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyViewModel.h; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Categories.m"; sourceTree = "<group>"; };
 		4F0D17D722DF71280004EC39 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		4F0D17D822DF71280004EC39 /* AppConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		4F0D17DF22E07B7E0004EC39 /* MvvmSampleObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MvvmSampleObjC-Prefix.pch"; path = "MvvmSampleObjC/MvvmSampleObjC-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 		4FECDA6D22DE66DB00F45EFD /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4F0D17DF22E07B7E0004EC39 /* MvvmSampleObjC-Prefix.pch */,
 				4FECDA6622DE64F600F45EFD /* main.m */,
 				4FECDA6522DE64F600F45EFD /* Info.plist */,
 				4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */,
@@ -160,7 +161,6 @@
 				4F0D17D722DF71280004EC39 /* AppConstants.h */,
 				4F0D17D822DF71280004EC39 /* AppConstants.m */,
 				4FECDA8822DE6DEC00F45EFD /* Common.h */,
-				4F0D17C022DF58130004EC39 /* MvvmSampleObjC-Prefix.pch */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
