@@ -9,6 +9,7 @@
 #ifndef Common_h
 #define Common_h
 
+#pragma mark - DEBUG logging
 #ifdef DEBUG
 #define debugLog(...) NSLog(__VA_ARGS__)
 #else
