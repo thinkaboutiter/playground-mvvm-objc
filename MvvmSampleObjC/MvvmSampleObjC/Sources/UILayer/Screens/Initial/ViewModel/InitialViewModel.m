@@ -9,17 +9,15 @@
 #import "InitialViewModel.h"
 
 @interface InitialViewModelImpl()
-/* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
-//@property (nonatomic, weak) id<InitialViewModelConsumer> _Nullable view;
+@property (nonatomic, weak) id<InitialViewModelConsumer> _Nullable viewModelConsumer;
 @end
 
 @implementation InitialViewModelImpl
 
-#pragma mark - Accessors
-/* Uncomment if two way references between View and ViewModel objects are needed. Be careful for retain cycles! */
-//- (void)setView:(id<InitialViewModelConsumer>)newValue {
-//    self.view = newValue;
-//}
+#pragma mark - InitialViewModel protocol
+- (void)setViewModelConsumer:(id<InitialViewModelConsumer>)newValue {
+    _viewModelConsumer = newValue;
+}
 
 #pragma mark - Initialization
 - (instancetype)init {
@@ -27,11 +25,12 @@
     if (self) {
         // setup
     }
+    debugLog(@"✅ %s » %@", __PRETTY_FUNCTION__, @"");
     return self;
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Deinitialized %@", NSStringFromClass([InitialViewModelImpl class])]);
+    debugLog(@"💀 %s » %@", __PRETTY_FUNCTION__, @"");
 }
 
 @end

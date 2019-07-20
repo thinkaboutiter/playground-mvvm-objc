@@ -7,16 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "InitialDependencyContainer.h"
+#import "InitialViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) InitialDependencyContainer * _Nonnull initialDependencyContainer;
 @end
 
 @implementation AppDelegate
 
+#pragma mark - Accessors
+- (InitialDependencyContainer *)initialDependencyContainer {
+    if (_initialDependencyContainer == nil) {
+        _initialDependencyContainer = [[InitialDependencyContainer alloc] init];
+    }
+    return _initialDependencyContainer;
+}
 
+#pragma mark - Life cycle methods
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    InitialViewController* vc = [self.initialDependencyContainer makeInitialViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:vc];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
