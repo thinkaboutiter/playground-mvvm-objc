@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooViewController">
+            <connections>
+                <outlet property="view" destination="cr5-Fg-Enp" id="1Gy-hW-kPW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cr5-Fg-Enp">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0GA-AZ-j5L" userLabel="dismiss-button">
+                    <rect key="frame" x="180" y="832" width="54" height="30"/>
+                    <state key="normal" title="Dismiss"/>
+                    <connections>
+                        <action selector="dismimssButton_touchUpInside:" destination="-1" eventType="touchUpInside" id="b90-qb-7Hh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Foo screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fap-cb-6sA" userLabel="title-label">
+                    <rect key="frame" x="142.5" y="437.5" width="129" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0GA-AZ-j5L" firstAttribute="centerX" secondItem="cr5-Fg-Enp" secondAttribute="centerX" id="LsL-Pa-5xy"/>
+                <constraint firstItem="fap-cb-6sA" firstAttribute="centerY" secondItem="cr5-Fg-Enp" secondAttribute="centerY" id="SDg-4d-XwT"/>
+                <constraint firstItem="fap-cb-6sA" firstAttribute="centerX" secondItem="cr5-Fg-Enp" secondAttribute="centerX" id="WPu-CS-7Yp"/>
+                <constraint firstItem="Rc1-FP-uHI" firstAttribute="bottom" secondItem="0GA-AZ-j5L" secondAttribute="bottom" id="yMi-Bj-mrB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Rc1-FP-uHI"/>
+            <point key="canvasLocation" x="326" y="-336"/>
+        </view>
+    </objects>
+</document>

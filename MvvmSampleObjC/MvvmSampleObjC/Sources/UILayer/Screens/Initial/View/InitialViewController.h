@@ -10,6 +10,12 @@
 #import "BaseViewController.h"
 #import "InitialViewModel.h"
 
-@interface InitialViewController : BaseViewController
+@class FooViewController;
 
+@interface InitialViewController : BaseViewController <InitialViewModelConsumer>
+- (instancetype _Nonnull)initWithNibName:(NSString * _Nullable)nibNameOrNil
+                                  bundle:(NSBundle * _Nullable)nibBundleOrNil NS_UNAVAILABLE;
+- (instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)aDecoder NS_UNAVAILABLE;
+- (instancetype _Nonnull)initWithViewModel:(id<InitialViewModel> _Nonnull)viewModel
+                              fooVCFactory:(FooViewController * _Nonnull (^ _Nonnull)(void))fooVCFactory NS_DESIGNATED_INITIALIZER;
 @end

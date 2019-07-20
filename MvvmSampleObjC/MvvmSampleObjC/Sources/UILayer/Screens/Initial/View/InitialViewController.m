@@ -7,38 +7,35 @@
 //
 
 #import "InitialViewController.h"
-#import "UIViewController+Categories.h"
-#import "DummyViewController.h"
-#import "DummyViewModel.h"
+#import "FooViewController.h"
 
 @interface InitialViewController () <InitialViewModelConsumer>
 @property (nonatomic, strong) id<InitialViewModel> _Nonnull viewModel;
+@property (nonatomic, strong) FooViewController * _Nonnull (^ _Nonnull fooVCFactory)(void);
 @end
 
 @implementation InitialViewController
-@synthesize viewModel = _viewModel;
-
-#pragma mark - InitialViewModelConsumer protocol
-- (void)setViewModel:(id<InitialViewModel>)newValue {
-    _viewModel = newValue;
-}
-
-- (id<InitialViewModel>)viewModel {
-    return self.viewModel;
-}
 
 #pragma mark - Initialization
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+- (instancetype)initWithViewModel:(id<InitialViewModel>)viewModel
+                     fooVCFactory:(FooViewController * _Nonnull (^ _Nonnull)(void))fooVCFactory
+{
+    self = [super initWithNibName:NSStringFromClass([InitialViewController class])
+                           bundle:nil];
     if (self) {
-        // setup
+        _viewModel = viewModel;
+        [_viewModel setViewModelConsumer:self];
+        _fooVCFactory = fooVCFactory;
     }
+    debugLog(@"✅ %s » %@", __PRETTY_FUNCTION__, @"");
     return self;
 }
 
 - (void)dealloc {
-    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, @"");
+    debugLog(@"💀 %s » %@", __PRETTY_FUNCTION__, @"");
 }
+
+#pragma mark - InitialViewModelConsumer protocol
 
 #pragma mark - Life cycle
 - (void)viewDidLoad {
@@ -46,19 +43,10 @@
 }
 
 #pragma mark - Actions
-- (IBAction)showDummyScreenButton_touchUpInside:(UIButton *)sender {
-    DummyViewController* vc = (DummyViewController *)[UIViewController fromStoryboardWithName:[AppConstants storyboardNameForStoryboardId:kStoryboardId_dummy]
-                                                                                       bundle:nil
-                                                                                   identifier:NSStringFromClass([DummyViewController class])];
-    if (vc == nil) {
-        debugLog(@"❌ %s » %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:@"Unable to instantiate %@", NSStringFromClass([DummyViewController class])]);
-        return;
-    }
-    id<DummyViewModel> vm = [[DummyViewModelImpl alloc] init];
-    [vc setViewModel:vm];
-    [self presentViewController:vc
-                       animated:YES
-                     completion:nil];
+- (IBAction)showFooScreenButton_touchUpInside:(UIButton *)sender {
+    debugLog(@"🛠 %s » %@", __PRETTY_FUNCTION__, @"");
+    FooViewController *vc = self.fooVCFactory();
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
