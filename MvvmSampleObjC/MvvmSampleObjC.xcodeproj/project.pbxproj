@@ -14,6 +14,7 @@
 		4F4FC7F222E3CE1D0039BC2B /* FooViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F122E3CE1D0039BC2B /* FooViewModel.m */; };
 		4F4FC7F522E3CEAD0039BC2B /* FooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F422E3CEAD0039BC2B /* FooViewController.m */; };
 		4F4FC7F722E3CF4A0039BC2B /* FooViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F622E3CF4A0039BC2B /* FooViewController.xib */; };
+		4F4FC7FA22E3D2010039BC2B /* FooDependencyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F922E3D2010039BC2B /* FooDependencyContainer.m */; };
 		4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA5822DE64F400F45EFD /* AppDelegate.m */; };
 		4FECDA6122DE64F600F45EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6022DE64F600F45EFD /* Assets.xcassets */; };
 		4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */; };
@@ -37,6 +38,8 @@
 		4F4FC7F322E3CEAD0039BC2B /* FooViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooViewController.h; sourceTree = "<group>"; };
 		4F4FC7F422E3CEAD0039BC2B /* FooViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooViewController.m; sourceTree = "<group>"; };
 		4F4FC7F622E3CF4A0039BC2B /* FooViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooViewController.xib; sourceTree = "<group>"; };
+		4F4FC7F822E3D2010039BC2B /* FooDependencyContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooDependencyContainer.h; sourceTree = "<group>"; };
+		4F4FC7F922E3D2010039BC2B /* FooDependencyContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooDependencyContainer.m; sourceTree = "<group>"; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 		4F4FC7ED22E3CDFA0039BC2B /* Foo */ = {
 			isa = PBXGroup;
 			children = (
+				4F4FC7F822E3D2010039BC2B /* FooDependencyContainer.h */,
+				4F4FC7F922E3D2010039BC2B /* FooDependencyContainer.m */,
 				4F4FC7EE22E3CE010039BC2B /* View */,
 				4F4FC7EF22E3CE050039BC2B /* ViewModel */,
 			);
@@ -319,6 +324,7 @@
 			files = (
 				4FECDA6722DE64F600F45EFD /* main.m in Sources */,
 				4F4FC7F522E3CEAD0039BC2B /* FooViewController.m in Sources */,
+				4F4FC7FA22E3D2010039BC2B /* FooDependencyContainer.m in Sources */,
 				4FECDA8122DE675100F45EFD /* BaseViewController.m in Sources */,
 				4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */,
 				4F4FC7EC22E3CA610039BC2B /* InitialDependencyContainer.m in Sources */,
