@@ -11,6 +11,9 @@
 		4F0D17D922DF71280004EC39 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D17D822DF71280004EC39 /* AppConstants.m */; };
 		4F4FC7E922E3C9330039BC2B /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FC7E822E3C9330039BC2B /* InitialViewController.xib */; };
 		4F4FC7EC22E3CA610039BC2B /* InitialDependencyContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7EB22E3CA610039BC2B /* InitialDependencyContainer.m */; };
+		4F4FC7F222E3CE1D0039BC2B /* FooViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F122E3CE1D0039BC2B /* FooViewModel.m */; };
+		4F4FC7F522E3CEAD0039BC2B /* FooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F422E3CEAD0039BC2B /* FooViewController.m */; };
+		4F4FC7F722E3CF4A0039BC2B /* FooViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F4FC7F622E3CF4A0039BC2B /* FooViewController.xib */; };
 		4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FECDA5822DE64F400F45EFD /* AppDelegate.m */; };
 		4FECDA6122DE64F600F45EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6022DE64F600F45EFD /* Assets.xcassets */; };
 		4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FECDA6222DE64F600F45EFD /* LaunchScreen.storyboard */; };
@@ -29,6 +32,11 @@
 		4F4FC7E822E3C9330039BC2B /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		4F4FC7EA22E3CA610039BC2B /* InitialDependencyContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialDependencyContainer.h; sourceTree = "<group>"; };
 		4F4FC7EB22E3CA610039BC2B /* InitialDependencyContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialDependencyContainer.m; sourceTree = "<group>"; };
+		4F4FC7F022E3CE1D0039BC2B /* FooViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooViewModel.h; sourceTree = "<group>"; };
+		4F4FC7F122E3CE1D0039BC2B /* FooViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooViewModel.m; sourceTree = "<group>"; };
+		4F4FC7F322E3CEAD0039BC2B /* FooViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooViewController.h; sourceTree = "<group>"; };
+		4F4FC7F422E3CEAD0039BC2B /* FooViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooViewController.m; sourceTree = "<group>"; };
+		4F4FC7F622E3CF4A0039BC2B /* FooViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooViewController.xib; sourceTree = "<group>"; };
 		4FECDA5422DE64F400F45EFD /* MvvmSampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MvvmSampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FECDA5722DE64F400F45EFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FECDA5822DE64F400F45EFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +71,34 @@
 				4F0D17D522DF63460004EC39 /* UIViewController+Categories.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		4F4FC7ED22E3CDFA0039BC2B /* Foo */ = {
+			isa = PBXGroup;
+			children = (
+				4F4FC7EE22E3CE010039BC2B /* View */,
+				4F4FC7EF22E3CE050039BC2B /* ViewModel */,
+			);
+			path = Foo;
+			sourceTree = "<group>";
+		};
+		4F4FC7EE22E3CE010039BC2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F4FC7F322E3CEAD0039BC2B /* FooViewController.h */,
+				4F4FC7F422E3CEAD0039BC2B /* FooViewController.m */,
+				4F4FC7F622E3CF4A0039BC2B /* FooViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F4FC7EF22E3CE050039BC2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F4FC7F022E3CE1D0039BC2B /* FooViewModel.h */,
+				4F4FC7F122E3CE1D0039BC2B /* FooViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4FECDA4B22DE64F400F45EFD = {
@@ -144,6 +180,7 @@
 		4FECDA7A22DE672000F45EFD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4F4FC7ED22E3CDFA0039BC2B /* Foo */,
 				4FECDA7B22DE672000F45EFD /* Initial */,
 			);
 			path = Screens;
@@ -247,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FECDA6422DE64F600F45EFD /* LaunchScreen.storyboard in Resources */,
+				4F4FC7F722E3CF4A0039BC2B /* FooViewController.xib in Resources */,
 				4FECDA6122DE64F600F45EFD /* Assets.xcassets in Resources */,
 				4F4FC7E922E3C9330039BC2B /* InitialViewController.xib in Resources */,
 			);
@@ -280,9 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FECDA6722DE64F600F45EFD /* main.m in Sources */,
+				4F4FC7F522E3CEAD0039BC2B /* FooViewController.m in Sources */,
 				4FECDA8122DE675100F45EFD /* BaseViewController.m in Sources */,
 				4FECDA5922DE64F400F45EFD /* AppDelegate.m in Sources */,
 				4F4FC7EC22E3CA610039BC2B /* InitialDependencyContainer.m in Sources */,
+				4F4FC7F222E3CE1D0039BC2B /* FooViewModel.m in Sources */,
 				4FECDA8422DE67BD00F45EFD /* InitialViewController.m in Sources */,
 				4FECDA8722DE67EF00F45EFD /* InitialViewModel.m in Sources */,
 				4F0D17D922DF71280004EC39 /* AppConstants.m in Sources */,
