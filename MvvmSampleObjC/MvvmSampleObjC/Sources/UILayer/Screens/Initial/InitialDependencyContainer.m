@@ -26,10 +26,13 @@
 #pragma mark - Factory methods
 - (InitialViewController *)makeInitialViewController {
     id<InitialViewModel> vm = [self makeInitialViewModel];
+    
+    // factory block
     FooViewController * _Nonnull (^ _Nonnull fooVCFactory)(void) =
     ^FooViewController * _Nonnull (void) {
         return [self makeFooViewController];
     };
+    
     InitialViewController *vc =
     [[InitialViewController alloc] initWithViewModel:vm
                                         fooVCFactory:fooVCFactory];
